@@ -1,0 +1,10 @@
+C:\Info Systems Project\BMI.Buddy\bin\MCD\Debug\netcoreapp2.0\BMI.Buddy.deps.json
+C:\Info Systems Project\BMI.Buddy\bin\MCD\Debug\netcoreapp2.0\BMI.Buddy.runtimeconfig.json
+C:\Info Systems Project\BMI.Buddy\bin\MCD\Debug\netcoreapp2.0\BMI.Buddy.runtimeconfig.dev.json
+C:\Info Systems Project\BMI.Buddy\bin\MCD\Debug\netcoreapp2.0\BMI.Buddy.dll
+C:\Info Systems Project\BMI.Buddy\bin\MCD\Debug\netcoreapp2.0\BMI.Buddy.pdb
+C:\Info Systems Project\BMI.Buddy\obj\MCD\Debug\netcoreapp2.0\BMI.Buddy.csproj.CoreCompileInputs.cache
+C:\Info Systems Project\BMI.Buddy\obj\MCD\Debug\netcoreapp2.0\BMI.Buddy.AssemblyInfoInputs.cache
+C:\Info Systems Project\BMI.Buddy\obj\MCD\Debug\netcoreapp2.0\BMI.Buddy.AssemblyInfo.cs
+C:\Info Systems Project\BMI.Buddy\obj\MCD\Debug\netcoreapp2.0\BMI.Buddy.dll
+C:\Info Systems Project\BMI.Buddy\obj\MCD\Debug\netcoreapp2.0\BMI.Buddy.pdb

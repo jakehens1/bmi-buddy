@@ -1,0 +1,29 @@
+@{
+    ViewData["Title"] = "Calculate (Imperial)";
+}
+
+<html>
+<head>
+    <title>Imperial System Calculation</title>
+</head>
+<body>
+    <br><br><br><br>
+   
+    @using (Html.BeginForm("Results", "Imperial"))
+    {
+        <fieldset>
+            <legend><h2><b>Calculate Your BMI (Imperial)</b></h2></legend>
+            <br>
+            <span>@Html.Label("Feet") : @Html.TextBox("feet")</span>
+            <br>
+            <span>@Html.Label("Inches") : @Html.TextBox("inches")</span>
+            <br>
+            <span>@Html.Label("Weight (lbs)") : @Html.TextBox("pounds")</span>
+            <br>
+        </fieldset>
+        <br>
+        <input type="submit" name="Calculate" value="Calculate" />
+    }
+    <br>
+    <p><i>This is the imperial BMI calculation page. To calculate BMI using the metric system, <a href="@Url.Action("Calculate","Metric")">click here.</a></i></p>
+</body>

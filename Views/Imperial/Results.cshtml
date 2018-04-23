@@ -1,0 +1,33 @@
+@{
+    ViewData["Title"] = "BMI Results (Imperial)";
+}
+
+<br><br><br>
+<fieldset>
+    <legend><h2><b>Information About Your BMI</b></h2></legend>
+    <h4>Your BMI: @Model.BMI</h4>
+    <h5><i>Interpretting your BMI</i></h5>
+    <p>Based on your Body Mass Index, you are likely to be defined as <b>@Model.BMICategory</b>. While BMI does not measure body fat directly, research has shown that BMI is moderatley correlated with more direct measures of body fat obtained from skinfold thickness measurements, bioelectrical impedance, and other methods. There are many factors beyond BMI that determine health, so use this information as a rough guideline of what a typical weight looks like for an adult at your height.</p>
+    <p>For a typical adult (20 years or older) of your height (@Model.feet' @Model.inches"), the ideal weight to maintain a healthy level of body fat is <i><b>@Model.idealWeight lbs.,</b> which is a difference of @Model.difference lbs. from your current weight.</i> This ideal weight would give a person of your height a BMI of @Model.healthyBMI. </p>
+    @{
+        if(@Model.BMICategory == "OBESE")
+        {
+            <p>People who have obesity are at severe risk for many diseases and health conditions, including high blood pressure, type 2 diabetes, coronary heart disease, stroke, gallbladder disease, and even death.  It is important to monitor your health and wellness, especially if you are obese, and talk with your doctor about steps you can take to reduce the risk of these adverse health conditions.</p>
+        }
+        else if(@Model.BMICategory == "OVERWEIGHT")
+        {
+            <p>People who are overweight are at moderate risk for many diseases and health conditions, including high blood pressure, type 2 diabetes, coronary heart disease, stroke, gallbladder disease, and even death.  While being below the obesity threshold does lessen the risk of these symptoms, failure to monitor your weight and body fat content could lead to these complications appearing down the line. It is important to monitor your health and wellness, especially if you are obese, and talk with your doctor about steps you can take to reduce the risk of these adverse health conditions.</p>
+        }
+        else if(@Model.BMICategory == "NORMAL")
+        {
+            <p>Being at a healthy BMI is a positive indicator in terms of mitigating risk of heart disease, type 2 diabetes, and other weight-related illnesses, but it is not the sole indicator of health.  It is important to monitor your health and wellness, especially if you are obese, and talk with your doctor about steps you can take to reduce the risk of these adverse health conditions.</p>
+        }
+        else if(@Model.BMICategory == "UNDERWEIGHT")
+        {
+            <p>There are many adverse health effects of being underweight, include hair loss, weakened immune system, dizziness or fatigue, fragile bones, and poor growth and development.  It is important to monitor your health and wellness, and talk with your doctor about steps you can take to reduce the risk of these adverse health conditions.</p>
+        }
+    }
+
+<p><b><a href="@Url.Action("Calculate","Imperial")">Click here</a> to restart the BMI calculation.</b></p>
+    
+</fieldset>
